@@ -17,6 +17,25 @@ namespace ConsoleApplication
             Console.WriteLine("Reverse of Test: "+ ReverseString("Test"));
             //Palindrome
             IsPalindromeString("icu");
+
+            //Factorial 5! = 5 * 4 *  3 * 2 * 1
+            Console.WriteLine("Factorial of 5: " + Factorial(5));
+
+            //Fibonacci Series : Each number is sum of preceding two numbers
+            //1 1 2 3 5 8
+            Console.WriteLine("Fib(5): "+ GenerateFibSeries(5));
+        }
+        static int GenerateFibSeries(int num)
+        {
+            if(num <= 1)
+                return 1;
+            return GenerateFibSeries(num -1) + GenerateFibSeries(num -2);
+        }
+        static long Factorial(long num){
+            if(num <= 1)
+                return 1;
+            else
+                return num * Factorial(num -1);
         }
 
         static long SumOfEvenNumbers(int[] intArray){
