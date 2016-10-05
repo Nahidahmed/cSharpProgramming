@@ -8,7 +8,7 @@ namespace ConsoleApplication
         public static void Main(string[] args)
         {
             int[] intArr = {1,2,3,4,5,6};
-            Console.WriteLine("Sum of Even Numbers in the array: "+ SumOfEvenNumbers(intArr));
+            Console.WriteLine("Sum of Even Numbers: "+ SumOfEvenNumbers(intArr));
         }
 
         static long SumOfEvenNumbers(int[] intArray){
