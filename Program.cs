@@ -14,7 +14,7 @@ namespace ConsoleApplication
             Console.WriteLine("Max Value: "+ intArr.Max());
 
             //String Reversal
-            Console.WriteLine("Reverse of Nahid: "+ ReverseString("Nahid"));
+            Console.WriteLine("Reverse of Mansuri: "+ ReverseString("Mansuri"));
             //Palindrome
             IsPalindromeString("icu");
         }
