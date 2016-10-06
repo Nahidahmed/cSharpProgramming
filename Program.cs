@@ -24,6 +24,17 @@ namespace ConsoleApplication
             //Fibonacci Series : Each number is sum of preceding two numbers
             //1 1 2 3 5 8
             Console.WriteLine("Fib(5): "+ GenerateFibSeries(5));
+
+            int input = 5;
+            PassByVal(input);
+            Console.WriteLine("PassByVal in MAIN: "+ input);        
+            
+
+            PassByRef(ref input);
+            Console.WriteLine("PassByRef in MAIN: "+ input);
+            
+            PassByOut(out input);
+            Console.WriteLine("PassByOut in MAIN: "+ input);
         }
         static int GenerateFibSeries(int num)
         {
@@ -57,6 +68,22 @@ namespace ConsoleApplication
                 Console.WriteLine("Its a Palindrome string: " +reverseStr);
             else
                 Console.WriteLine("Its NOT a Palindrome string: " +reverseStr);
+        }
+
+        static void PassByVal(int input)
+        {
+            input +=10;
+            Console.WriteLine("PassByVal: "+ input);
+        }
+        static void PassByRef(ref int input)
+        {
+            input +=10;
+            Console.WriteLine("PassByRef: "+ input);
+        }
+        static void PassByOut(out int input)
+        {
+            input = 10;
+            Console.WriteLine("PassByOut: "+ input);
         }
         
     }
